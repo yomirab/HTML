@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuestas</title>
+</head>
+<body>
+    <h1>Encuestas</h1>
+
+  <form>
+<fieldset>
+    <legend>Datos personales</legend>
+   Usuario: <input type="texto" name="usuario" size="40" placeholder="Escriba su nombre y Apellido"><br><br>
+
+   Codigo Postal: <input type="texto" name="codigo" size="10"><br><br>
+
+   Correo: <input type="email" name="correo" size="40"><br><br>
+</fieldset>
+
+<fieldset>
+    <legend>Datos de Encuesta</legend>
+   Comentarios positivos: <textarea name="positivos"></textarea><br><br>
+
+   Comentarios negativos: <textarea name="negativos"></textarea><br><br>
+
+   Satisfaccion de nuestro producto:
+    <select name="menu">
+        <option value="...">...</option>
+        <option value="1">Uno</option>
+        <option value="2">Dos</option>
+        <option value="3">Tres</option>
+        <option value="4">Cuatro</option>
+        <option value="5">Cinco</option>
+    </select><br><br>
+
+   Evalue nuestros servicios del 1 al 5: <br> 
+   <input type="radio" name="boton" value="0">Malo<br>
+   <input type="radio" name="boton" value="1">Regular<br>
+   <input type="radio" name="boton" value="2">Bueno<br>
+   <input type="radio" name="boton" value="2">Muy Bueno<br>
+   <input type="radio" name="boton" value="3">Excelente<br><br>
+
+   Evalue la Rapidez del Servicio (malo, regular, bueno, muy bueno, excelente):<br><br>
+   <input type="range" name="rango" min="0" max="5" list="lista-rango">
+   <datalist id="lista-rango">
+       <option value="1" label="malo">
+       <option value="2" label="regular">
+       <option value="3" label="bueno">
+       <option value="4" label="muy bueno">
+       <option value="5" label="excelente">
+   </datalist>
+</fieldset>
+</form>
+</body>
+
+
+</html>
